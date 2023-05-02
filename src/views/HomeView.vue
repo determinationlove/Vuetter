@@ -1,8 +1,11 @@
-<script setup>
+<script>
+export default {
+  props: {
+    username: String
+  }
+}
 </script>
 
 <template>
-  <main>
-    
-  </main>
+  <h1>{{ username }}</h1>
 </template>
