@@ -1,9 +1,17 @@
 <script>
+import userStore from "../stores/user";
+import { storeToRefs } from "pinia";
+
 export default {
-  props: {
-    username: String
-  }
-}
+  setup() {
+    const user = userStore();
+    const { username } = storeToRefs(user);
+
+    return {
+      username,
+    };
+  },
+};
 </script>
 
 <template>
