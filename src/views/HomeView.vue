@@ -1,19 +1,16 @@
-<script>
+<script setup>
 import userStore from "../stores/user";
 import { storeToRefs } from "pinia";
+import Post from "../components/Post.vue";
 
-export default {
-  setup() {
+
     const user = userStore();
     const { username } = storeToRefs(user);
 
-    return {
-      username,
-    };
-  },
-};
 </script>
 
 <template>
   <h1>{{ username }}</h1>
+  <br/>
+  <Post />
 </template>
