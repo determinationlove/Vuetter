@@ -8,7 +8,11 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'lipsum-zh': fileURLToPath(new URL('./src/assets/index.esm.js', import.meta.url))
     }
+  },
+  optimizeDeps: {
+    exclude: ['lorem-ipsum-tc']
   }
 })

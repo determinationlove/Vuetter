@@ -10,7 +10,6 @@ import Post from "../components/Post.vue";
 </script>
 
 <template>
-  <h1>{{ username }}</h1>
   <br/>
   <Post />
 </template>
