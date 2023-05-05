@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export default defineStore("userStore", {
     state: () => ({
-        username: "",
+        username: "不具名的你",
     }),
 
     actions: {
