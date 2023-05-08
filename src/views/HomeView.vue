@@ -26,14 +26,14 @@ fetchData();
 </script>
 
 <template>
-  <div class="w-full mb-20">
+  <div class="w-full md:mb-20">
     <Header />
-    <div class="flex flex-col justify-center items-center w-full px-96">
+    <div class="flex flex-col justify-center items-center w-full md:px-96">
       <Post
         v-for="(item, index) in data.r"
         :key="index"
         :data="data.r[index]"
-        class="my-5 min-w-full "
+        class="my-5 m-10 md:min-w-full "
       />
     </div>
   </div>

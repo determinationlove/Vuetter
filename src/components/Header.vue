@@ -10,7 +10,7 @@ const { username } = storeToRefs(user);
   <div
     class="flex flex-row items-center w-full h-28 text-lg shadow-lg mb-10"
   >
-    <div class="w-full">
+    <div class="w-20">
       <img
         alt="Vue logo"
         class="logo w-14 justify-start ml-10"
@@ -18,6 +18,6 @@ const { username } = storeToRefs(user);
       />
     </div>
 
-    <p class="mr-10 w-full flex justify-end">歡迎回來！ {{ username }}。</p>
+    <p class="mr-10 w-full flex justify-end text-base md:text-lg">歡迎回來！ {{ username }}。</p>
   </div>
 </template>
