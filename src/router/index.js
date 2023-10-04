@@ -5,7 +5,7 @@ import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
-    path: "/Vuetter/",
+    path: "/",
     component: HelloWorld
   },
   {
@@ -16,7 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory('/Vuetter/'),
+  history: createWebHistory(),
   routes
 });
 

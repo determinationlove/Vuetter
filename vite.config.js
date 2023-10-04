@@ -1,24 +1,18 @@
-import { fileURLToPath, URL } from "node:url";
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "./",
-    build: {
-        outDir: "docs",
-    },
-    plugins: [vue()],
-    resolve: {
-        alias: {
-            "@": fileURLToPath(new URL("./src", import.meta.url)),
-            "lipsum-zh": fileURLToPath(
-                new URL("./src/assets/index.esm.js", import.meta.url)
-            ),
-        },
-    },
-    optimizeDeps: {
-        exclude: ["lorem-ipsum-tc"],
-    },
-});
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'lipsum-zh': fileURLToPath(new URL('./src/assets/index.esm.js', import.meta.url))
+    }
+  },
+  optimizeDeps: {
+    exclude: ['lorem-ipsum-tc']
+  }
+})
