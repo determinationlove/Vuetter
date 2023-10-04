@@ -15,7 +15,7 @@ let data = ref({
 });
 const isEditorVisible = ref(false);
 const customPostHtml = ref([]);
-const imageURL = "/logo.svg";
+const imageURL = "logo.svg";
 
 const fetchData = async () => {
     await axios
