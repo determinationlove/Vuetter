@@ -2,7 +2,7 @@
 
 練習用Vue製作靜態網站，CSS 使用 Tailwind 框架，狀態管理使用 [Pinia](Zustand-url) 套件
 
-Demo: 
+Demo: [determinationlove.github.io/Vuetter](determinationlove.github.io/Vuetter)
 
 ### Built With
 [![Vue][Vue.js]][Vue-url]
