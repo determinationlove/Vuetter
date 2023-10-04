@@ -16,15 +16,15 @@ msg = msgs[Math.floor(Math.random() * msgs.length)];
 </script>
 
 <template>
-  <header class=" h-screen md:h-full md:w-full flex justify-center">
+  <header class="flex h-screen md:h-full md:w-full justify-center">
     <div class="wrapper w-full flex flex-col justify-center md:w-full md:flex-row md:p-20">
       <img
         alt="Vue logo"
-        class="logo w-28 items-center justify-center md:w-32"
+        class="logo w-28 items-center justify-center md:w-32 md:h-32 md:item-start"
         src="@/assets/logo.svg"
       />
-      <Greet :msg="msg" class=" w-screen md:w-4/12" />
-      <LoginView class="w-screen md:w-5/12" />
+      <Greet :msg="msg" class=" w-screen break-keep md:w-4/12 md:ml-10" />
+      <LoginView class="flex w-screen md:w-5/12" />
     </div>
   </header>
 </template>

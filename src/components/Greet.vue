@@ -9,10 +9,10 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <p class="green w-full flex justify-center md:justify-start text-3xl md:text-4xl mb-5">{{ msg }}</p>
+    <p class="green w-full flex justify-center md:justify-start text-3xl md:text-4xl mb-5 lg:mb-4">{{ msg }}</p>
     <h3 class=" text-gray-500">Vue Side Project</h3>
     <div class="flex w-full justify-center items-center">
-      <nav class="flex w-screen mb-10 md:mb-0 justify-center items-center md:w-full md:mt-10 md:block">
+      <nav class="flex w-screen md:w-full  justify-center items-center mb-10 md:mb-0 lg:mb-10 md:mt-5 lg:mt-2 md:block">
         <a href="https://home.gamer.com.tw/homeindex.php?owner=guiltyghost">
           About
         </a>
