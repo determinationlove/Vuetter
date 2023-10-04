@@ -35,7 +35,7 @@ const toggleElement = () => {
 const addTextToCustomPost = (text) => {
     let temp = `<div class="flex flex-col max-w-4xl min-w-full rounded-md bg-slate-50 shadow-md shadow-slate-400 p-5">
         <div class="flex flex-row items-center mb-5">
-            <img src="/src/assets/logo.svg" class="w-10 rounded-full mr-5" />
+            <img src="./src/assets/logo.svg" class="w-10 rounded-full mr-5" />
             <p class="mr-2 text-lg">${username.value}</p>
             <p class="text-gray-500 hidden md:block">isYou</p>
         </div>
