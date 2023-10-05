@@ -13,7 +13,7 @@ const emit = defineEmits();
 const addTextToParent = () => {
     emit("addtext", inputText.value);
     console.log(inputText.value);
-    inputText.value = ""; // 清空<textarea>的内容
+    inputText.value = "";
 };
 </script>
 

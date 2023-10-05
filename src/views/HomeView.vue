@@ -44,7 +44,7 @@ const addTextToCustomPost = (text) => {
         <Reply />
     </div>`;
     customPostHtml.value.unshift(temp);
-    console.log(customPostHtml.value)
+    console.log(customPostHtml.value);
 };
 
 fetchData();
@@ -71,7 +71,7 @@ fetchData();
                 v-for="(item, index) in customPostHtml"
                 :key="index"
                 v-html="item"
-                class="custom-post flex my-5 "
+                class="custom-post flex my-5"
             ></div>
 
             <Post
